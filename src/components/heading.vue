@@ -206,6 +206,7 @@ export default {
        
     },
     created(){
+      localStorage.setItem('emmaaa', this.balance)
       this.getBudgets()
       this.getMonth()
       this.getIncome()
