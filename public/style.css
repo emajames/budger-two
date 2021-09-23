@@ -1,0 +1,124 @@
+* {
+    /* overflow: hidden; */
+  }
+  .nav-container {
+    background-image: url("../assets/image one.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(12, 11, 22, 0.699);
+    background-blend-mode: overlay;
+    padding: 3vmin 3vmin;
+    height: 70vmin;
+  }
+  .nav-image {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    padding: 0.3vmin;
+    width: 17vmin;
+  }
+  .nav-image {
+    width: 10vmin;
+  }
+  #cont{
+    outline: none;
+  }
+  .guid{
+    color:rgb(29, 149, 29) ;
+  }
+  nav h1 {
+    font-size: 5vmin;
+  }
+  .month h1 {
+    font-size: 8vmin;
+  }
+  .total-value h1 {
+    font-size: 15vmin;
+    /* margin-bottom: 100rem; */
+  }
+  .sect-1 {
+    padding: 10vmin 11vmin;
+  }
+  .income{
+    background: rgb(29, 149, 29) !important;
+  }
+  .expenses{
+    background: rgb(231, 23, 23);
+  }
+  
+  .income,
+  .expenses {
+    font-size: 4vmin;
+  }
+  
+  .income-container {
+    padding: 1vmin 1vmin;
+  }
+  
+  select {
+    height: 2.3rem;
+    /* width: 20vmin; */
+    border-radius: 0.3rem;
+  }
+  .in-ex-selector input {
+    margin-left: 5vmin;
+    outline: none;
+    height: 2.3rem;
+    /* width: 60vmin; */
+    border-radius: 0.3rem;
+  }
+  
+  .in-ex-selector button {
+    margin-left: 5vmin;
+    outline: none;
+    height: 2.3rem;
+    /* width: 15vmin; */
+    border-radius: 0.3rem;
+  }
+  .add{
+      background: rgb(29, 149, 29);
+      border: none;
+      padding: 0 2.2vmin;
+      color: #fff;
+  }
+  #item{
+    border:3px solid rgb(245, 231, 231); 
+    
+    color: #000 !important;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .in-ex-selector {
+      display: block !important;
+      text-align: center;
+    }
+  
+    select {
+      width: 100%;
+      margin-bottom: 3vmin;
+      height: unset;
+    }
+    .in-ex-selector input {
+      margin-left: unset;
+      width: 100%;
+      margin-bottom: 3vmin;
+      height: unset;
+    }
+  
+    .in-ex-selector button {
+      margin-left: unset;
+      width: 50%;
+      height: unset;
+    }
+  
+    .expend {
+      margin-top: 4vmin;
+    }
+    .nav-container {
+    height: 95vmin;
+  }
+  .add{
+      margin-top: 5vmin;
+      padding: 1vmin 0;
+  }
+}
+  
