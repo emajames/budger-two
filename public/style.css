@@ -1,124 +1,216 @@
-* {
-    /* overflow: hidden; */
-  }
-  .nav-container {
-    background-image: url("../assets/image one.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(12, 11, 22, 0.699);
-    background-blend-mode: overlay;
-    padding: 3vmin 3vmin;
-    height: 70vmin;
-  }
-  .nav-image {
-    background-color: rgb(255, 255, 255);
-    border-radius: 10%;
-    padding: 0.3vmin;
-    width: 17vmin;
-  }
-  .nav-image {
-    width: 10vmin;
-  }
-  #cont{
-    outline: none;
-  }
-  .guid{
-    color:rgb(29, 149, 29) ;
-  }
-  nav h1 {
-    font-size: 5vmin;
-  }
-  .month h1 {
-    font-size: 8vmin;
-  }
-  .total-value h1 {
-    font-size: 15vmin;
-    /* margin-bottom: 100rem; */
-  }
-  .sect-1 {
-    padding: 10vmin 11vmin;
-  }
-  .income{
-    background: rgb(29, 149, 29) !important;
-  }
-  .expenses{
-    background: rgb(231, 23, 23);
-  }
+* * {
+  margin: 0;
+  padding: 0;
+
+}
+
+.container-fluid {
+  background-color: rgb(8, 3, 65);
+  background-size: cover;
+
+}
+
+.all {
+  padding: 3vmin 10vmin;
+}
+
+
+.nav-image {
+  margin-bottom: 4vmin;
+  width: 25vmin;
   
-  .income,
-  .expenses {
-    font-size: 4vmin;
-  }
-  
-  .income-container {
-    padding: 1vmin 1vmin;
-  }
-  
-  select {
-    height: 2.3rem;
-    /* width: 20vmin; */
-    border-radius: 0.3rem;
-  }
-  .in-ex-selector input {
-    margin-left: 5vmin;
-    outline: none;
-    height: 2.3rem;
-    /* width: 60vmin; */
-    border-radius: 0.3rem;
-  }
-  
-  .in-ex-selector button {
-    margin-left: 5vmin;
-    outline: none;
-    height: 2.3rem;
-    /* width: 15vmin; */
-    border-radius: 0.3rem;
-  }
-  .add{
-      background: rgb(29, 149, 29);
-      border: none;
-      padding: 0 2.2vmin;
-      color: #fff;
-  }
-  #item{
-    border:3px solid rgb(245, 231, 231); 
-    
-    color: #000 !important;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .in-ex-selector {
+}
+
+
+.sect-1-writeup {
+  background-color: transparent;
+  border-top: 1.5px solid #fff;
+  border-bottom: 1.5px solid #fff;
+  margin-top: 5vmin;
+  margin-bottom: 4vmin;
+  padding: 2vmin 0;
+  width: 50%;
+}
+
+
+.sect-1-writeup h1 {
+  font-size: 6vmin;
+  color: rgb(231, 23, 23);
+  text-shadow: 2px 4px 3px black;
+}
+
+#cont {
+  outline: none;
+}
+
+.guid {
+  color: rgb(29, 149, 29);
+}
+
+.month h1 {
+  font-size: 4vmin;
+  padding: 2vmin 0;
+
+}
+
+.total-value {
+  font-size: 15vmin;
+  margin-bottom: 4vmin;
+}
+
+.income-expenses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.income {
+  background: rgb(3, 3, 146) !important;
+  width: 100%;
+  font-size: 4vmin;
+}
+
+.income h4,
+.expenses h4 {
+  font-size: 3vmin;
+}
+
+.expenses {
+  background: rgb(231, 23, 23);
+  width: 100%;
+  margin-left: 2vmin;
+}
+
+.jumbotron {
+  border-top-left-radius: 15vmin !important;
+  border-top-right-radius: 15vmin !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 5vmin 10vmin !important;
+}
+
+
+.income-container {
+  padding: 1.5vmin 1.5vmin;
+  border-radius: 2vmin;
+}
+
+.in-ex-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 4vmin;
+}
+
+select {
+  height: 3rem;
+  width: 40vmin;
+  border-radius: 0.3rem;
+
+}
+
+
+.in-ex-selector input {
+  padding: 0 1vmin;
+  outline: none;
+  height: 3rem;
+  width: 55vmin;
+  border-radius: 0.3rem;
+}
+
+.in-ex-selector button {
+  outline: none;
+  height: 3rem;
+  border-radius: 0.6vmin;
+}
+
+.add {
+  background: rgb(8, 3, 65);
+  border: none;
+  padding: 0 3vmin;
+  color: #fff;
+}
+
+#item {
+  border: 3px solid rgb(245, 231, 231);
+  color: #000 !important;
+}
+
+.delete-btn {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.expend,
+.incomed {
+  font-size: 6vmin;
+  padding: 2vmin;
+}
+
+.expend h5,
+.incomed h5 {
+  font-size: 4vmin;
+}
+
+.desc-value {
+  font-size: 4vmin;
+}
+
+@media only screen and (max-width: 840px) {
+  .in-ex-selector {
       display: block !important;
       text-align: center;
-    }
-  
-    select {
+  }
+
+  select {
       width: 100%;
-      margin-bottom: 3vmin;
+      margin-bottom: 3vmin !important;
       height: unset;
-    }
-    .in-ex-selector input {
+  }
+
+  .in-ex-selector input {
       margin-left: unset;
       width: 100%;
       margin-bottom: 3vmin;
       height: unset;
-    }
-  
-    .in-ex-selector button {
+  }
+
+  .in-ex-selector button {
       margin-left: unset;
-      width: 50%;
+      width: 40%;
       height: unset;
-    }
-  
-    .expend {
-      margin-top: 4vmin;
-    }
-    .nav-container {
-    height: 95vmin;
+      margin-top: 0vmin;
   }
-  .add{
-      margin-top: 5vmin;
-      padding: 1vmin 0;
-  }
+
+
 }
-  
+
+@media only screen and (max-width: 767px) {
+
+  .sect-1-writeup {
+      width: 100% !important;
+  }
+
+  .income-expenses {
+      display: block !important;
+
+  }
+
+  .income {
+
+      width: 100%;
+  }
+
+  .expenses {
+      margin-top: 2vmin;
+      margin-left: unset;
+      margin-bottom: 10vmin;
+  }
+
+  .expend,
+  .incomed {
+      margin-top: 4vmin;
+  }
+
+}
